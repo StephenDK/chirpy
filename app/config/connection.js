@@ -2,9 +2,9 @@
 var Sequelize = require("sequelize");
 
 if (process.env.JAWSDB_URL) {
-    sequelize = mysql.createConnection(process.env.JAWSDB_URL);
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-    sequelize = mysql.createConnection({
+    connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
         password: 'StephenDKlein360',
