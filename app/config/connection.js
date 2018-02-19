@@ -1,6 +1,17 @@
 // Dependencies
 var Sequelize = require("sequelize");
 
+if (process.env.JAWSDB_URL) {
+    sequelize = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    sequelize = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'StephenDKlein360',
+        database: 'sequelize_chirpy'
+    });
+};
+
 // Create a mysql connectiom with sequelize 
 var sequelize = new Sequelize("sequelize_chirpy", "root", "StephenDKlein360", {
     host: "localhost",
