@@ -1,0 +1,19 @@
+{
+  "name": "chirpy",
+  "version": "0.0.1",
+  "description": "Chirpy is a basic twitter clone site that uses Sequelize to store and retrieve data ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Stephen Klein",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.33.4"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>| Chirpy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- JQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Moment.js CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header/Title -->
+        <div class="jumbotron">
+            <h1 class="text-center" id="cover-title">Chirpy</h1>
+            <h3>Chirp your thoughts!!</h3>
+            <hr>
+        </div>
+
+        <!-- User Chirp Input -->
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <!-- User name input -->
+                <p class="cool-font">Name:</p>
+                <input class="form-control" type="text" id="author" placeholder="Enter Your Name">
+                <br>
+                <!-- User chirp input -->
+                <p class="cool-font">Chirp:</p>
+                <textarea class="form-control" rows="3" id="chirp-box" placeholder="Enter Chirp Here!"></textarea>
+                <!-- Submit button -->
+                <button id="chirp-submit" class="btn btn-primary">Submit</button>
+
+
+            </div>
+        </div>
+
+        <!-- Display new chirps -->
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2>Chirps</h2>
+                <hr>
+                <div id="chirp-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- link to chirp.js -->
+<script src="js/chirp.js"></script>
+</body>
+</html>
